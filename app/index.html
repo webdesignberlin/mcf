@@ -35,6 +35,10 @@
                 padding: 1em;
                 border: 0.2em solid black;
             }
+            .slider__navigation label:hover {
+                color: darkgray;
+                cursor: pointer;
+            }
             .slider__stage {
                 height: 70vh;
                 overflow: hidden;
@@ -50,6 +54,7 @@
             transition: opacity 2000ms ease, transform 800ms linear;
         }
         .slider--animation input:checked + .slider__slide { transform: scale(1) translate(0, 0); }
+
     </style>
 </head>
 <body>
