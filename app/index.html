@@ -13,35 +13,56 @@
         }
 
         .slider { padding: 1em; }
-            .slider img,
+            .slider__slide {
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
             .slider input { display: none; }
-                .slider__navigatio:focus { color: #808080; }
-                .slider input:checked + img { display: block; }
+            .slider input:checked + .slider__slide { opacity: 1; }
 
             .slider__stage,
             .slider__navigation {
                 padding: 1em;
                 border: 0.2em solid black;
             }
+            .slider__stage {
+                height: 70vh;
+                overflow: hidden;
+                position: relative;
+            }
             .slider__navigation { margin-top: 2em; }
-            .slider__slide { list-style: none; }
+            .slider__slide {
+                list-style: none;
+            }
+
+        .slider--animation .slider__slide {
+            transform: scale(1.4) translate(-10%, 10%);
+            transition: opacity 2000ms ease, transform 800ms linear;
+        }
+        .slider--animation input:checked + .slider__slide { transform: scale(1) translate(0, 0); }
     </style>
 </head>
 <body>
 
-<div class="slider">
+<div class="slider slider--animation">
 
     <ul class="slider__stage">
+        <input name="slider__slide" id="slider__slide-1" type="radio" checked>
         <li class="slider__slide">
-            <input name="slider__slide" id="slider__slide-1" type="radio" checked>
             <img src="img/slide.jpg" alt="Bootstrap 3d light slider photo gallery demos" title="Material Design">
         </li>
+
+        <input name="slider__slide" id="slider__slide-2" type="radio">
         <li class="slider__slide">
-            <input name="slider__slide" id="slider__slide-2" type="radio">
             <img src="img/slide-2.jpg" alt="jQuery generator free mac slideshow best images gallery" title="Material Design">
         </li>
+
+        <input name="slider__slide" id="slider__slide-3" type="radio">
         <li class="slider__slide">
-            <input name="slider__slide" id="slider__slide-3" type="radio">
             <img src="img/slide-3.jpg" alt="Wordpress simple width slideshow video download" title="Material Design">
         </li>
     </ul>
@@ -51,6 +72,8 @@
         <label for="slider__slide-2">Slide 2</label>
         <label for="slider__slide-3">Slide 3</label>
     </section>
+
+</div>
 
 </body>
 </html>
