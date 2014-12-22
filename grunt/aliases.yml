@@ -32,6 +32,7 @@
 
 # Buildtasks for Jenkins
 'build-ci':
+  - 'copy-deps'
   - 'jshint:ci'
   - 'csslint:ci'
 #  - 'qunit_junit'
@@ -40,6 +41,7 @@
 
 # Buildtask for local
 'build-dev':
+  - 'copy-deps'
   - 'jshint:dev'
   - 'csslint:dev'
 #  - 'qunit_junit'
