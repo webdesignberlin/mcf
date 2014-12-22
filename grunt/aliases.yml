@@ -34,16 +34,16 @@
 'build-ci':
   - 'jshint:ci'
   - 'csslint:ci'
-  - 'qunit_junit'
-  - 'qunit-istanbul:ci'
+#  - 'qunit_junit'
+#  - 'qunit-istanbul:ci'
   - 'build-json'
 
 # Buildtask for local
 'build-dev':
   - 'jshint:dev'
   - 'csslint:dev'
-  - 'qunit_junit'
-  - 'qunit:dev'
+#  - 'qunit_junit'
+#  - 'qunit:dev'
   - 'build-json'
 
 # start sync and watch
