@@ -1,0 +1,56 @@
+###
+# + Custom Task Definitions
+# https://github.com/firstandthird/load-grunt-config
+# ==================================================================
+#
+# @description lists all configured tasks
+#
+
+# copy tasks
+
+# copy dependencies
+'copy-deps':
+  - 'clean:deps'
+  - 'copy'
+
+# update bower.json from package.json
+'build-json':
+  - 'update_json:bower'
+
+# process stylesheets
+'build-css':
+  - 'sass:main'
+  - 'autoprefixer:main'
+  - 'css_mqpacker:main'
+#  - 'csswring:main'
+
+# process javascripts
+'build-js':
+  - 'jshint:main'
+  - 'modernizr:main'
+  - 'uglify:main'
+
+# Buildtasks for Jenkins
+'build-ci':
+  - 'jshint:ci'
+  - 'csslint:ci'
+  - 'qunit_junit'
+  - 'qunit-istanbul:ci'
+  - 'build-json'
+
+# Buildtask for local
+'build-dev':
+  - 'jshint:dev'
+  - 'csslint:dev'
+  - 'qunit_junit'
+  - 'qunit:dev'
+  - 'build-json'
+
+# start sync and watch
+'sync':
+  - 'browserSync'
+  - 'watch'
+
+# build job as default
+'default':
+  - 'build-dev'

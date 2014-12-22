@@ -1,24 +1,113 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
+###
+# + Project related
+# ==================================================================
 
-# Folders
-_obj
-_test
+# processed assets
+app/assets/css/*.css
+app/assets/css/*.map
+app/assets/js/*.js
+app/assets/js/*.map
 
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
+# vendor files
+app/assets/css/vendor/**/*
+app/assets/js/vendor/**/*
+app/assets-dev/styles/vendor/**/*
+app/assets-dev/js/vendor/**/*
 
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
+# temporary assets
+app/assets-temp
 
-_testmain.go
+# = Project related
 
-*.exe
-*.test
-*.prof
+
+
+###
+# + IDEs / DevEnv
+# ==================================================================
+
+# JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+/*.iml
+.idea/
+.idea_modules/
+*.ipr
+*.iws
+
+# Dreamweaver
+_notes
+dwsync.xml
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.sublime-grunt.cache
+sftp-config.json
+
+# Jenkins, Vagrant
+build/*
+.vagrant/
+
+# Node, Bower, Sass
+node_modules/
+npm-debug.log
+bower_components/
+.sass-cache/
+
+# = IDEs / DevEnv
+
+
+
+###
+# + Operating systems
+# ==================================================================
+
+# Linux
+*~
+.directory
+.ssh/
+
+# Windows
+thumbs.db
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+
+# = Operating systems
+
+
+
+###
+# + Other
+# ==================================================================
+
+*.tmp
+*.bak
+*.swp
+
+# = Other
+
+
+
+###
+# + Do not ignore
+# ==================================================================
+
+!.gitignore
+!.gitkeep
+
+# = Do not ignore
