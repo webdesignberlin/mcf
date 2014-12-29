@@ -1,0 +1,24 @@
+/**
+ * + Beschreibung/Modulname
+ * @name content-box
+ * @description Module Content Box
+ * @type {partial}
+ *
+ * @dependencies full-box, something-else (#)
+ *
+ * @link http://www.link-to-example.com (#)
+ *
+ * @requires {mixin} prefix
+ * @requires {function} emToPx
+ * @requires {placeholder} reset-outline
+ *
+ * @markup (#)
+ *  <div class="content-box">
+ *      <h2 class="content-box__headline">This is a headline</h2>
+ *  </div>
+ */
+h1 {
+  color: black;
+  font-size: 4em;
+  font-weight: normal; }
+/*# sourceMappingURL=main.css.map */

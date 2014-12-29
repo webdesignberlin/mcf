@@ -1,10 +1,16 @@
 /**
  * + Task Config: SASS
- * https://www.npmjs.com/package/grunt-contrib-sass
+ * https://github.com/sindresorhus/grunt-sass
  * =====================================================================
  *
  * Description compile Sass Files
+ * This task uses libsass which is an experimental Sass compiler in C++.
+ * In contrast to the original Ruby compiler, this one is much faster, but is
+ * missing some features, though improving quickly.
+ * It also doesn't support Compass. Check out grunt-contrib-sass if you prefer
+ * something more stable, but slower.
  */
+
 module.exports = {
 
     // overall options

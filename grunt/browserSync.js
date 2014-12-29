@@ -10,14 +10,14 @@ module.exports = {
     // overall options
     options: {
         // url to dev site
-        proxy:          'mcf.dev',
+        //proxy:          'mcf.dev',
         // or static file server
-        /*
+
         server: {
             baseDir:    '<%= globalConfig.htdocs %>',
-            directory:  true
+            directory:  false
         },
-        */
+
         watchTask:      true,
         ghostMode: {
             clicks:     true,

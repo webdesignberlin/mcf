@@ -38,7 +38,7 @@ module.exports = {
             'grunt/*.yml'
         ],
         tasks: [
-            'jshint:grunt'
+            'jshint:dev'
         ]
     },
 
@@ -60,7 +60,7 @@ module.exports = {
             '<%= globalConfig.assetsDev %>/js/**/*.js'
         ],
         tasks: [
-            'build-js-lazy'
+            'build-js'
         ]
     }
 

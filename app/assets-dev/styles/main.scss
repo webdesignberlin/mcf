@@ -17,3 +17,11 @@
  *      <h2 class="content-box__headline">This is a headline</h2>
  *  </div>
  */
+
+$color-default: black;
+
+h1 {
+    color: $color-default;
+    font-size: 4em;
+    font-weight: normal;
+}

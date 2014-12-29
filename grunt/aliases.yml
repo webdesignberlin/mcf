@@ -22,11 +22,12 @@
   - 'sass:main'
   - 'autoprefixer:main'
   - 'css_mqpacker:main'
+  - 'csslint:dev'
 #  - 'csswring:main'
 
 # process javascripts
 'build-js':
-  - 'jshint:main'
+  - 'jshint:dev'
   - 'modernizr:main'
   - 'uglify:main'
 
@@ -43,7 +44,6 @@
 'build-dev':
   - 'copy-deps'
   - 'jshint:dev'
-  - 'csslint:dev'
 #  - 'qunit_junit'
 #  - 'qunit:dev'
   - 'build-json'
