@@ -56,3 +56,7 @@
 # build job as default
 'default':
   - 'build-dev'
+
+# Run karma
+'test-unit':
+  - 'karma'
