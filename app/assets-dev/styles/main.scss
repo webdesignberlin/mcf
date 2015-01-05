@@ -1,24 +1,39 @@
 /**
- * + Beschreibung/Modulname
- * @name content-box
- * @description Module Content Box
- * @type {partial}
+ * Description z.B: Module Content Box
+ *
+ * @author mg
+ * @Todo hier muss was passieren
+ * @type string
  *
  * @dependencies full-box, something-else (#)
  *
  * @link http://www.link-to-example.com (#)
  *
- * @requires {mixin} prefix
+ * @requires $color-default variable
  * @requires {function} emToPx
  * @requires {placeholder} reset-outline
  *
- * @markup (#)
+ * @example
  *  <div class="content-box">
  *      <h2 class="content-box__headline">This is a headline</h2>
  *  </div>
  */
 
 $color-default: black;
+$color-primary: red;
+
+html,
+body {height: 100%;}
+body {
+    background: linear-gradient(230deg,#a24bcf,#4b79cf,#4bc5cf);
+    -webkit-animation: MoveBG 60s ease infinite;
+    background-size: 300% 300%;
+}
+@-webkit-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
 
 h1 {
     color: $color-default;
