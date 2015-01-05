@@ -15,10 +15,17 @@ app/assets-dev/styles/vendor/**/*
 app/assets-dev/js/vendor/**/*
 
 # temporary assets
-app/assets-temp
+app/assets-temp/
 
 # = Project related
+# wraith screenshots https://github.com/jamesryanbell/node-wraith
+shots/
 
+# sassdocs
+docs/
+
+# release
+release/
 
 
 ###
