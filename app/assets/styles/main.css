@@ -2,10 +2,9 @@
  * Description z.B: Module Content Box
  *
  * @author mg
- * @Todo hier muss was passieren
- * @type string
+ * @todo hier muss was passieren
  *
- * @dependencies full-box, something-else (#)
+ * @see full-box, something-else (#)
  *
  * @link http://www.link-to-example.com (#)
  *
@@ -40,4 +39,25 @@ h1 {
   color: black;
   font-size: 4em;
   font-weight: normal; }
+
+/**
+ * Ein paar variablen
+ *
+ * @type string
+ * @group variables
+ *
+ * @example
+ *  <div class="blubb blubba">
+ *      Blubb
+ *  </div>
+ */
+/**
+ * @type string
+ * @group variables
+ */
+.blubb {
+  content: §blubb; }
+
+.blubba {
+  content: §blubba; }
 /*# sourceMappingURL=main.css.map */

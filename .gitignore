@@ -22,7 +22,7 @@ app/assets-temp/
 shots/
 
 # sassdocs
-docs/
+docs/*
 
 # release
 release/
