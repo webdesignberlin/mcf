@@ -10,7 +10,10 @@ module.exports = {
 
   'default': {
     'src': '<%= globalConfig.assetsDev %>/styles',
-    'dest': '<%= globalConfig.root %>/docs'
+    'dest': '<%= globalConfig.root %>/docs',
+    options: {
+      theme: 'default'
+    }
   }
 
 };
