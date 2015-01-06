@@ -3,10 +3,11 @@
  *
  * @author mg
  * @todo hier muss was passieren
+ * @type General | und noch was
  *
- * @see full-box, something-else (#)
+ * @see full-box, something-else, dependencies (#)
  *
- * @link http://www.link-to-example.com (#)
+ * @link http://www.link-to-example.com Beispiel oder Documentationslink (#)
  *
  * @requires $color-default variable
  * @requires {function} emToPx
