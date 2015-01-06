@@ -36,16 +36,12 @@
   - 'copy-deps'
   - 'jshint:ci'
   - 'csslint:ci'
-#  - 'qunit_junit'
-#  - 'qunit-istanbul:ci'
   - 'build-json'
 
 # Buildtask for local
 'build-dev':
   - 'copy-deps'
   - 'jshint:dev'
-#  - 'qunit_junit'
-#  - 'qunit:dev'
   - 'build-json'
 
 # start sync and watch
