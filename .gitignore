@@ -105,6 +105,7 @@ Icon
 *.tmp
 *.bak
 *.swp
+*.map
 
 # = Other
 
