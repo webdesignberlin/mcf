@@ -1,4 +1,35 @@
 /**
+ * Funktion zum Schriftgröße in rem berechnen
+ *
+ * @group calculate Font Size
+ *
+ * @param {int} $size - Schriftgröße ganze Zahl
+ *
+ * @author mg, fh
+ *
+ * @returns {int} returns calculated rem
+ *
+*/
+/**
+ * Mixin Schriftgröße in rem berechnen
+ *
+ * @group calculate Font Size
+ *
+ * @param {int} $size - Schriftgröße ganze Zahl
+ *
+ * @author mg, fh
+ *
+ * @example
+ *  @include font-size(14px)
+ *
+ * @requires {variable} $blubb - Eine Variable die wir nicht brauchen
+ * @requires {function} calculateRem - Funktion wird für berechnung benötigt
+ *
+ *
+ * @todo change function syntax soon
+ *
+*/
+/**
  * Description z.B: Module Content Box
  *
  * @author mg
@@ -45,7 +76,7 @@ h1 {
  * Ein paar variablen
  *
  * @type string
- * @group variables
+ * @group blubbsgruppe
  *
  * @example
  *  <div class="blubb blubba">
@@ -53,8 +84,16 @@ h1 {
  *  </div>
  */
 /**
+ * blubba description
+ *
  * @type string
- * @group variables
+ * @group blubbsgruppe
+ */
+/**
+ * wasanderes description
+ *
+ * @type string
+ * @group blubbsgruppe
  */
 .blubb {
   content: §blubb; }

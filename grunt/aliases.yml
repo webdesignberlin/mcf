@@ -6,63 +6,53 @@
 # @description lists all configured tasks
 #
 
-# copy tasks
+# build job as default
+'default':
+  - 'build-dev'
 
-# copy dependencies
-'copy-deps':
-  - 'clean:deps'
-  - 'copy'
+# Buildtask for local
+'build-dev':
+  - 'build-js'
+  - 'build-css'
+  - 'update_json:bower' # update bower.json from package.json
 
-# update bower.json from package.json
-'build-json':
-  - 'update_json:bower'
+# Buildtask for deploy
+'build':
+  - 'build-dev'
+  - 'test'
+  - 'test-google'
 
 # process stylesheets
 'build-css':
   - 'sass:main'
   - 'autoprefixer:main'
   - 'css_mqpacker:main'
-  - 'csslint:dev'
-#  - 'csswring:main'
+ # - 'csslint:dev'
 
 # process javascripts
 'build-js':
   - 'jshint:dev'
   - 'uglify:main'
 
-# Buildtasks for Jenkins
-'build-ci':
-  - 'copy-deps'
-  - 'jshint:ci'
-  - 'csslint:ci'
-  - 'build-json'
-
-# Buildtask for local
-'build-dev':
-  - 'copy-deps'
-  - 'build-js'
-  - 'jshint:dev'
-  - 'build-json'
-
 # start sync and watch
 'sync':
   - 'browserSync'
   - 'watch'
 
-# build job as default
-#'default':
-#  - 'build-dev'
-
 # Run karma
 'test-unit':
   - 'karma'
 
-<<<<<<< HEAD
 # Run jasmine-node
 'test-web':
   - 'jasmine_node'
-=======
+
+# Run all tests
+'test':
+  - 'test-unit'
+  - 'test-web'
+
 # Run Googlepagespeed local
 'test-google':
+  - 'browserSync'
   - 'psi-ngrok'
->>>>>>> 3cf41587a0ee99134cc3040cde29b81ce8b09909
