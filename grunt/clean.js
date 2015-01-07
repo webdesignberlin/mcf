@@ -12,10 +12,6 @@ module.exports = {
       '<%= globalConfig.temp %>'
   ],
 
-  report: [
-      '<%= globalConfig.report %>'
-  ],
-
   // auto-installed dependencies / vendor folders
   deps: [
     '<%= globalConfig.assets %>/js/vendor/**/*',

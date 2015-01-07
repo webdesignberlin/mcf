@@ -17,8 +17,7 @@ module.exports = {
     main: {
         files: [{
             src: [
-                '<%= globalConfig.assetsDev %>/js/vendor/modernizr/modernizr-custom.js',
-                '<%= globalConfig.assetsDev %>/js/main.js'
+                '<%= globalConfig.assetsDev %>/js/**/*.js',
             ],
             dest: '<%= globalConfig.assets %>/js/main.min.js'
         }]

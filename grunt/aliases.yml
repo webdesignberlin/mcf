@@ -28,7 +28,6 @@
 # process javascripts
 'build-js':
   - 'jshint:dev'
-  - 'modernizr:main'
   - 'uglify:main'
 
 # Buildtasks for Jenkins
@@ -41,6 +40,7 @@
 # Buildtask for local
 'build-dev':
   - 'copy-deps'
+  - 'build-js'
   - 'jshint:dev'
   - 'build-json'
 
@@ -50,9 +50,13 @@
   - 'watch'
 
 # build job as default
-'default':
-  - 'build-dev'
+#'default':
+#  - 'build-dev'
 
 # Run karma
 'test-unit':
   - 'karma'
+
+# Run jasmine-node
+'test-web':
+  - 'jasmine_node'
