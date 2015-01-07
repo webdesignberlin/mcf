@@ -56,3 +56,7 @@
 # Run karma
 'test-unit':
   - 'karma'
+
+# Run Googlepagespeed local
+'test-google':
+  - 'psi-ngrok'
