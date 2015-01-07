@@ -47,11 +47,12 @@ module.exports = function(grunt) {
     //jitGrunt: true,
     jitGrunt: {
       // here you can pass options to jit-grunt (or just jitGrunt: true)
-      jitGrunt: true,
+      jitGrunt: true
       /*staticMappings: {
-       // specify static mappings, for qunit
-       qunit: 'grunt-qunit-istanbul'
-       }*/
+
+        // specify static mappings, for qunit
+        qunit: 'grunt-qunit-istanbul'
+      }*/
     },
     // if not using jit-grunt, auto-load according to devDependencies
     /*

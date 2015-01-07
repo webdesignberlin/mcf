@@ -57,6 +57,12 @@
 'test-unit':
   - 'karma'
 
+<<<<<<< HEAD
 # Run jasmine-node
 'test-web':
   - 'jasmine_node'
+=======
+# Run Googlepagespeed local
+'test-google':
+  - 'psi-ngrok'
+>>>>>>> 3cf41587a0ee99134cc3040cde29b81ce8b09909
