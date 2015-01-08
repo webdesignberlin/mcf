@@ -6,7 +6,8 @@ var webdriverio = require('webdriverio');
 
 var options = {
     desiredCapabilities: {
-        browserName: 'chrome'
+        // firefox, chrome, phantomjs
+        browserName: 'phantomjs'
     }
 };
 
@@ -20,11 +21,11 @@ beforeEach(function() {
 
 afterEach(function(done) {
     client.end(done);
-    /*
-    setTimeout(function() {
+
+    /*setTimeout(function() {
         client.end(done);
-    }, 10);
-    */
+    }, 5000);*/
+
 });
 
 describe('my webdriverio tests', function() {
@@ -35,7 +36,7 @@ describe('my webdriverio tests', function() {
             .getElementSize('.header-logo-wordmark', function(err, result) {
                 expect(err).toBeFalsy();
                 expect(result.height).toBe(26 );
-                expect(result.width).toBe(89);
+                expect(result.width).toBe(37);
             })
             .getTitle(function(err, title) {
                 expect(err).toBeFalsy();
