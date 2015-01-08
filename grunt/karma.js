@@ -26,7 +26,7 @@ module.exports = {
     options: {
       files: [
         'app/assets-dev/js/*.js',
-        'test/unit/*Spec.js'
+        'test/unit/*spec.js'
       ]
     },
 
