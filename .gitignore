@@ -3,8 +3,8 @@
 # ==================================================================
 
 # processed assets
-app/assets/css/*.css
-app/assets/css/*.map
+app/assets/styles/*.css
+app/assets/styles/*.map
 app/assets/js/*.js
 app/assets/js/*.map
 
