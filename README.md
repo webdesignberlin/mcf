@@ -72,3 +72,59 @@ There are other commands also available, these all expect a config_name to be pa
   wraith capture [config_name]              # A full Wraith job
   wraith reset_shots [config_name]          # removes all the files in the shots folder
 ```
+
+Testing
+-----------------------
+
+## Unit Testing
+Unit testing is a software testing method by which individual units of source code, sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine whether they are fit for use. Intuitively, one can view a unit as the smallest testable part of an application.
+
+
+The Test runner for JavaScript [Karma](https://github.com/karma-runner/karma) is implemented as a testing environment. The testing framework to define the test cases is [Jasmine](http://jasmine.github.io/).
+
+
+### Usage
+To run the grunt task for unit testing simply type
+
+```sh
+grunt test-unit
+```
+
+## Web Testing
+Functional Testing is the process by which expected behavior of an application can be tested.
+
+
+### Requirements
+To run functional web tests [WebdriverIO](http://webdriver.io/) (testing utility for node.js) and a selenium server is required. The [selenium-standalone](https://github.com/vvo/selenium-standalone) package launches a command line selenium server that contains several webdriver.
+It has to be installed globally on the system
+
+```sh
+npm install selenium-standalone@2.43.1-5 -g
+```
+
+In case [PhantomJS](http://phantomjs.org/) is not installed globally on the system yet run 
+
+```sh
+npm install phantomjs -g
+```
+
+
+### Usage
+At first the selenium server needs to run
+
+```sh
+start-selenium
+```
+
+
+To run the grunt task for web testing simply type
+
+```sh
+grunt test-web
+```
+
+To run all tests type
+
+```sh
+grunt test
+```
